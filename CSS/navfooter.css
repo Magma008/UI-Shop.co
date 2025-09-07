@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 0px 20px;
+}
+
+body {
+    position: relative;
+    min-height: 200vh;
+}
+
+/* !===================== Upper Section =====================! */
+
+.upper,
+.upper a {
+    background: black;
+    color: white;
+}
+
+.upper center {
+    position: relative;
+}
+
+.upper p {
+    font-size: 13px;
+}
+
+.upper br {
+    display: none;
+}
+
+.upperClose {
+    position: absolute;
+    right: 5px;
+    top: 0%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* !=========================================================! */
+
+/* +----------------- Navigation Bar Section -----------------+ */
+
+.navBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: rgba(151, 151, 151, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 100000;
+}
+
+.navGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navLinks a,
+.miniBar a {
+    color: black;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.navGroup h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navForm,
+.miniForm {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 8px;
+}
+
+.navForm input {
+    min-width: 400px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+    padding: 4px 10px;
+}
+
+.miniForm input {
+    width: 250px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+    padding: 4px 10px;
+}
+
+#closeInput {
+    outline: none;
+    border: none;
+}
+
+.miniForm {
+    width: fit-content;
+    position: absolute;
+    padding: 0px 5px;
+    top: -150px;
+    z-index: 101;
+    transition: all .3s linear;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smallIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navSearch {
+    width: 22px;
+    height: 22px;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navIcons img,
+.smallIcons img {
+    cursor: pointer;
+}
+
+.smallIcons img,
+.navSearch {
+    display: none;
+}
+
+.smallIcons img {
+    transition: all .3s linear;
+}
+
+.miniBar {
+    display: none;
+    transition: all .3s ease;
+    height: 0px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.miniBar li {
+    transition: all .3s linear;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.miniBar li:hover {
+    background: #e9e9e9;
+    padding-left: 15px;
+}
+
+.miniBar li:hover a {
+    transition: all .3s linear;
+    color: white;
+}
+
+.opener {
+    height: 144px;
+    margin: 10px 0px;
+}
+
+.rotated {
+    transform: rotate(-90deg);
+}
+
+.navLinks li a {
+    transition: all .2s linear;
+}
+
+.navLinks li a:hover {
+    color: aquamarine;
+}
+
+/* +----------------------------------------------------------+ */
+
+/* !--------------------- Footer Section ---------------------! */
+
+.footer {
+    padding-top: 40px;
+    background: #f0f0f0;
+    list-style: none;
+}
+
+.footer li a {
+    color: black;
+    text-decoration: none;
+}
+
+.blackedGroup {
+    background: black;
+    color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blackedGroup h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.blackedGroup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.inputGroup input {
+    width: 250px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+}
+
+.blacked button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.footerGroup {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.ftGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.ftSection p {
+    line-height: 25px;
+}
+
+.ftSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.SM {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.SM img {
+    width: 30px;
+    height: 30px;
+}
+
+.ftSection h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.innerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerGroup hr {
+    margin: 30px 0px;
+}
+
+.innerFooter span {
+    font-size: 15px;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* !-----------------------------------------------------------! */
+
+/* *------------------- Responsive Section -------------------* */
+
+@media screen and (max-width: 1030px) {
+    .navForm input {
+        min-width: 250px;
+    }
+
+    .ftGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+}
+
+@media screen and (max-width: 880px) {
+    .navForm input {
+        min-width: 200px;
+    }
+
+    .navGroup h1 {
+        font-size: 25px;
+    }
+
+    .navLinks a {
+        font-size: 15px;
+    }
+
+    .miniBar {
+        display: none;
+    }
+
+    .blackedGroup h1 {
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .smallIcons img,
+    .navSearch {
+        display: inline-block;
+    }
+
+    .navForm,
+    .navLinks {
+        display: none;
+    } 
+
+    .miniBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blackedGroup {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .innerFooter {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .upper p {
+        font-size: 11px;
+    }
+
+    .upper br {
+        display: inline-block;
+    }
+
+    .upperClose {
+        top: 10px;
+    }
+
+    .blackedGroup {
+        padding: 20px;
+    }
+
+    .inputGroup input {
+        width: 220px;
+    }
+
+    .footerIcons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* *----------------------------------------------------------* */

@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 0px 20px;
+}
+
+body {
+    position: relative;
+    min-height: 200vh;
+}
+/* + ----------------------------------------------------------- + */
+
+/* *======================== Main Section ========================* */
+
+.main {
+    padding: 60px 0px;
+    background: #f0f0f0 url("../Images/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 30px;
+    min-height: 100vh;
+}
+
+.mainGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+.mainGroup h1 {
+    font-size: 70px;
+    line-height: 65px;
+    font-weight: 900;
+}
+
+.mainGrText {
+    font-weight: 300;
+} 
+
+.mainGroup button {
+    width: fit-content;
+    padding: 6px 35px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    color: white;
+    transition: all .2s ease;
+    background: black;
+}
+
+.mainGroup button:hover {
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.statGroup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.statGroup h2 {
+    font-size: 28px;
+}
+
+.statGroup h5 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.innerStat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    position: absolute;
+}
+
+.star1 {
+    top: 30px;
+    right: 30px;
+}
+
+.star2 {
+    top: 50%;
+    right: 45%;
+}
+
+/* *==============================================================* */
+
+/* ?----------------------- Brands Section -----------------------? */
+
+.brands {
+    background: black;
+}
+
+.brandGroup {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ?--------------------------------------------------------------? */
+
+/* +======================== Cards Section ========================+ */
+
+.cards {
+    padding: 40px 0px;
+}
+
+.cards h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardImage {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 10px 3px;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    flex: 1;
+}
+
+.cardButton {
+    margin-top: auto;
+}
+
+.cardButton button {
+    width: 100%;
+    padding: 2px 30px;
+    border-radius: 5px;
+    border: 1.5px solid skyblue;
+    background-color: skyblue;
+    color: white;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.cardButton button:hover {
+    background: transparent;
+    color: skyblue;
+}
+
+.cardBody p {
+    margin-bottom: 10px;
+}
+
+.cardGroup,
+.cardGroup1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    width: 70%;
+}
+
+.cardPrice {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+}
+
+.dsPercent {
+    background: pink;
+    border-radius: 20px;
+    padding: 0px 4px;
+    line-height: 18px;
+    font-size: 11px;
+    color: orangered;
+}
+
+.hidden {
+    display: none;
+}
+
+.dsPrice {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.stars span {
+    font-size: 13px;
+}
+
+.cardsBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.cardsBtn button {
+    transition: all .3s ease;
+    padding: 8px 15px;
+    cursor: pointer;
+    width: 180px;
+    border: 1.5px solid #dfdfdf;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.cardsBtn button:hover {
+    background-color: #dfdfdf;
+    color: white;
+}
+
+/* +===============================================================+ */
+
+/* ?===================== Dress Style Section =====================? */
+
+.dressStyles {
+    padding: 50px 0px;
+}
+
+.styleDiv {
+    background: #f0f0f0;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.styleDiv center h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+
+.styleGr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.grDiv {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    aspect-ratio: 5/3;
+}
+
+.grDiv1 {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    aspect-ratio: 10/4;
+}
+
+.grDiv img,
+.grDiv1 img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.grDiv h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.styleGroup {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+    gap: 15px;
+    width: 85%;
+}
+
+.styleGroup1 {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    align-items: center;
+    gap: 15px;
+    width: 85%;
+}
+
+/* ?===============================================================? */
+
+/* #======================= Reviews Section =======================# */
+
+.reviews {
+    padding: 50px 0px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.reviewGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.reviewCard {
+    border: 1.5px solid #dfdfdf;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+    height: max-content;
+}
+
+.reviewCard p {
+    font-weight: 300;
+}
+
+.rvTitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rvStars {
+    display: flex;
+    align-items: center;
+}
+
+.rvStars img {
+    width: 19px;
+    height: 17px;
+}
+
+/* #===============================================================# */
+
+/* @===================== Resposive Section ===================== @ */
+
+@media screen and (max-width: 1200px) {
+    .star {
+        display: none;
+    }
+
+    .brandGroup {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .styleGroup, 
+    .styleGroup1 {
+        width: 100%;
+    }
+
+    .styleDiv {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainGroup h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .mainGrText {
+        font-size: 15px;
+    } 
+
+    .brandGroup {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brandGroup img {
+        width: 50%;
+    }
+
+    .grDiv h1 {
+        top: 0px;
+        left: 10px;
+    }
+}
+
+@media  screen and (max-width: 570px) {
+    .main {
+        padding: 60px 0px;
+        background: #f0f0f0 url("../Images/mini-main-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        line-height: 30px;
+        min-height: 190vh;
+    }
+
+    .styleGroup,
+    .styleGroup1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grDiv {
+        aspect-ratio: 8/5;
+    }
+    
+    .grDiv1 {
+        aspect-ratio: 8/5;
+    }
+
+    .grDiv img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        line-height: 25px;
+    }
+
+    .mainGroup h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    .statGroup {
+        flex-direction: column;
+    }
+
+    .brandGroup img {
+        width: 85%;
+    }
+    .cards h1,
+    .styleDiv center h1 {
+        font-size: 25px;
+    }
+
+}
+
+/* @============================================================= @ */

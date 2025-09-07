@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 0px 20px;
+}
+
+body {
+    position: relative;
+    min-height: 200vh;
+}
+
+/* #------------------------ Details Section ------------------------# */
+
+.details {
+    padding: 40px 0px;
+}
+
+.linkDirection {
+    display: flex;
+    justify-content: start;
+    padding: 10px 0px;
+    font-size: 14px;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkDirection a {
+    text-decoration: none;
+    color: black;
+}
+
+.detailsGroup {
+    /* background: fuchsia; */
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.bigImage {
+    aspect-ratio: 4.6/7;
+    min-width: 345px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bigImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.itemImages {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.itemDetails h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.rating,
+.stars,
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+}
+
+.prices {
+    gap: 8px;
+}
+
+.dsPrice {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.dsNum {
+    background-color: violet;
+    padding: 0px 5px;
+    border-radius: 10px;
+    line-height: 22px;
+    color: orangered;
+}
+
+.itemText {
+    line-height: 20px;
+}
+
+.itemDetails hr {
+    margin: 15px 0px;
+}
+
+.colorsGroup {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.color {
+    background: brown;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+
+.color:nth-child(2) {
+    background: teal;
+    color: teal;
+}
+
+.color:nth-child(3) {
+    background: springgreen;
+    color: springgreen;
+}
+
+.sizeGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sizeGroup button {
+    border: none;
+    background: #f0f0f0;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.sizeGroup button:nth-child(3) {
+    background-color: black;
+    color: white;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.counter,
+.countCart {
+    padding: 3px 30px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.counter button {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.counter {
+    /* width: 30%; */
+    justify-content: center;
+}
+
+.countCart {
+    background: black;
+    color: white;
+    padding: 5px 40px;
+}
+
+/* #-----------------------------------------------------------------# */
+
+/* *------------------------ Reviews Section ------------------------* */
+
+.reviews {
+    padding: 40px 0px;
+}
+
+.upperGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.reviewButtons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewText span {
+    color: gray;
+}
+
+.reviewButtons button {
+    padding: 6px 20px;
+    line-height: 27px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.reviewButtons button:nth-child(3) {
+    background: black;
+    color: white;
+}
+
+.reviewGroup {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.reviewCard {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* *-----------------------------------------------------------------* */
+
+/* @----------------------- Responsive Design ----------------------- @ */
+
+@media screen and (max-width: 992px) {
+    .detailsGroup {
+        flex-direction: column;
+    }
+
+    .miniImages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .itemImages {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .itemImages {
+        width: auto !important;
+    }
+
+    .miniImages img {
+        width: 80%;
+    }
+
+    .bigImage {
+        aspect-ratio: 4.6/7;
+        min-width: auto;
+        background: #f0f0f0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .sizeGroup {
+        display: grid;
+        align-items: center;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .counter,
+    .countCart {
+        padding: 3px 20px;
+        gap: 10px;
+    }
+
+    .upperGroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewGroup {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* @----------------------------------------------------------------- @ */

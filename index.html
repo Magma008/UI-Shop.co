@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-Shop.co</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Website Small Icon -->
+    <link rel="icon" href="Images/boutique.png">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Navbar and Footer CSS Stylesheet -->
+    <link rel="stylesheet" href="CSS/navfooter.css">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <section class="upper">
+        <div class="main-container">
+            <center>
+                <p>Sign up and get 20% off to your first order. <br> <a href="#">Sign up now</a></p>
+            </center>
+            <img onclick="closeUpper()" src="Images/x.png" alt="" class="upperClose">
+        </div>
+    </section>
+    <section class="navBar">
+        <div class="main-container">
+            <div class="navGroup">
+                <div class="smallIcons">
+                    <img onclick="isOpen()" id="menuOpener" src="Images/menu.png" alt="+">
+                    <h1>UI-Shop.co</h1>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="details.html">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+                <div class="navForm">
+                    <img src="Images/search.png" alt="search">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <div class="navIcons">
+                    <img onclick="miniInput(`open`)" class="navSearch" src="Images/search-black.png" alt="search">
+                    <img src="Images/nav-cart.png" alt="cart">
+                    <img src="Images/nav-cta.png" alt="cta">
+                </div>
+                <div class="miniForm">
+                    <img src="Images/search.png" alt="search">
+                    <input type="text" placeholder="Search for products...">
+                    <button onclick="miniInput(`close`)" id="closeInput">❌</button>
+                </div>
+            </div>
+            <ul class="miniBar">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main-container">
+            <div class="mainGroup">
+                <h1>FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</h1>
+                <p class="mainGrText">Browse through our diverse range of meticulously crafted garments, designed <br>
+                    to bring out your individuality and cater to your sense of style.</p>
+                <a href="#">
+                    <button>Shop Now</button>
+                </a>
+                <div class="statGroup">
+                    <div class="innerStat">
+                        <div class="stat">
+                            <h2>200+</h2>
+                            <h5>International Brands</h5>
+                        </div>
+                        <div class="stat">
+                            <h2>2,000+</h2>
+                            <h5>High-Quality Products</h5>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <h2>30,000+</h2>
+                        <h5>Happy Customers</h5>
+                    </div>
+                </div>
+                <img src="Images/black-star-lg.png" alt="⭐" class="star star1">
+                <img src="Images/black-star-sm.png" alt="⭐" class="star star2">
+            </div>
+        </div>
+    </section>
+    <section class="brands">
+        <div class="main-container">
+            <div class="brandGroup">
+                <img src="Images/versace.png" alt="Versace">
+                <img src="Images/zara.png" alt="Zara">
+                <img src="Images/gucci.png" alt="Gucci">
+                <img src="Images/prada.png" alt="Prada">
+                <img src="Images/ck.png" alt="CK">
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="main-container">
+            <center>
+                <h1>NEW ARRIVALS</h1>
+            </center>
+
+            <div class="cardGroup">
+                <!-- <div class="card">
+                    <div class="cardImage">
+                        <img src="Images/na-card2.png" alt="card-image-1">
+                    </div>
+                    <div class="cardBody">
+                        <h4>T-shirt with Tape Details</h4>
+                        <div class="stars">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/half-star.png" alt="⭐">
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="cardPrice">
+                            <p>$120</p>
+                            <p class="dsPrice">$180</p>
+                            <p class="dsPercent">-20%</p>
+                        </div>
+                        <div class="cardButton">
+                            <button>Add to cart 🛒</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="cardsBtn">
+                <button>View All</button>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="main-container">
+            <center>
+                <h1>TOP SELLING</h1>
+            </center>
+
+            <div class="cardGroup1">
+                <!-- <div class="card">
+                    <div class="cardImage">
+                        <img src="Images/na-card2.png" alt="card-image-1">
+                    </div>
+                    <div class="cardBody">
+                        <h4>T-shirt with Tape Details</h4>
+                        <div class="stars">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/star.png" alt="⭐">
+                            <img src="Images/half-star.png" alt="⭐">
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="cardPrice">
+                            <p>$120</p>
+                            <p class="dsPrice">$180</p>
+                            <p class="dsPercent">-20%</p>
+                        </div>
+                        <div class="cardButton">
+                            <button>Add to cart 🛒</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="cardsBtn">
+                <button>View All</button>
+            </div>
+        </div>
+    </section>
+    <section class="dressStyles">
+        <div class="main-container">
+            <div class="styleDiv">
+                <center>
+                    <h1>BROWSE BY DRESS STYLE</h1>
+                </center>
+
+                <div class="styleGr">
+                    <div class="styleGroup">
+                        <div class="grDiv">
+                            <img src="Images/casual.png" alt="casual">
+                            <h1>Casual</h1>
+                        </div>
+                        <div class="grDiv grDiv1">
+                            <img src="Images/formal.png" alt="formal">
+                            <h1>Formal</h1>
+                        </div>
+                    </div>
+                    <div class="styleGroup1">
+                        <div class="grDiv grDiv1">
+                            <img src="Images/party.png" alt="party">
+                            <h1>Party</h1>
+                        </div>
+                        <div class="grDiv">
+                            <img src="Images/gym.png" alt="gym">
+                            <h1>Gym</h1>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="main-container">
+            <!-- <div class="reviewGroup">
+                <div class="reviewCard">
+                    <div class="rvStars">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                    </div>
+                    <div class="rvTitle">
+                        <h4>Sarah M.</h4>
+                        <img src="Images/green-tick.png" alt="✅">
+                    </div>
+                    <p>"I'm blown away by the quality and style of the clothes I receive from UI-Shop.co. From casual
+                        wear to elegant dresses, every piece i've bougth has exceed my expectations."</p>
+                </div>
+                <div class="reviewCard">
+                    <div class="rvStars">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                    </div>
+                    <div class="rvTitle">
+                        <h4>Alex K.</h4>
+                        <img src="Images/green-tick.png" alt="✅">
+                    </div>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
+                        UI-Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
+                        and occasions."</p>
+                </div>
+                <div class="reviewCard">
+                    <div class="rvStars">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                        <img src="Images/star.png" alt="⭐">
+                    </div>
+                    <div class="rvTitle">
+                        <h4>James L.</h4>
+                        <img src="Images/green-tick.png" alt="✅">
+                    </div>
+                    <p>"As someone who's always on the lookout for unique fashion pieces. I'm thrilled to have stumbled
+                        upon UI-Shop.co. The Selection of clothes is not diverse but also on-point with the latest
+                        trends."</p>
+                </div>
+            </div> -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>Sarah M.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"I'm blown away by the quality and style of the clothes I receive from UI-Shop.co.
+                                From
+                                casual wear to elegant dresses, every piece i've bougth has exceed my expectations."
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>Alex K.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"Finding clothes that align with my personal style used to be a challenge until I
+                                discovered
+                                UI-Shop.co. The range of options they offer is truly remarkable, catering to a variety
+                                of tastes
+                                and occasions."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>James L.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"As someone who's always on the lookout for unique fashion pieces. I'm thrilled to have
+                                stumbled
+                                upon UI-Shop.co. The Selection of clothes is not diverse but also on-point with the
+                                latest
+                                trends."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>Sarah M.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"I'm blown away by the quality and style of the clothes I receive from UI-Shop.co.
+                                From
+                                casual wear to elegant dresses, every piece i've bougth has exceed my expectations."
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>Alex K.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"Finding clothes that align with my personal style used to be a challenge until I
+                                discovered
+                                UI-Shop.co. The range of options they offer is truly remarkable, catering to a variety
+                                of tastes
+                                and occasions."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviewCard">
+                            <div class="rvStars">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                                <img src="Images/star.png" alt="⭐">
+                            </div>
+                            <div class="rvTitle">
+                                <h4>James L.</h4>
+                                <img src="Images/green-tick.png" alt="✅">
+                            </div>
+                            <p>"As someone who's always on the lookout for unique fashion pieces. I'm thrilled to have
+                                stumbled
+                                upon UI-Shop.co. The Selection of clothes is not diverse but also on-point with the
+                                latest
+                                trends."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <div class="main-container">
+            <div class="blackedGroup">
+                <h1>STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h1>
+                <form>
+                    <div class="inputGroup">
+                        <img src="Images/footer-mail.png" alt="📧">
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit">Subscribe to Newsletter</button>
+                </form>
+            </div>
+            <div class="footerGroup">
+                <div class="ftGrid">
+
+                    <div class="ftSection">
+                        <h1>UI-SHOP.CO</h1>
+                        <p>We have clothes that suits your style and <br> which you're proud to wear. From <br> women to men
+                        </p>
+                        <div class="SM">
+                            <img src="Images/twitter.png" alt="🐦">
+                            <img src="Images/facebook.png" alt="📞">
+                            <img src="Images/instagram.png" alt="📱">
+                            <img src="Images/github.png" alt="🐱">
+                        </div>
+                    </div>
+
+                    <div class="ftSection">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ftSection">
+                        <h3>HELP</h3>
+                        <ul>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">Delivery Details</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ftSection">
+                        <h3>FAQ</h3>
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Manage Deliveries</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Payments</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ftSection">
+                        <h3>RESOURCES</h3>
+                        <ul>
+                            <li><a href="#">Free eBooks</a></li>
+                            <li><a href="#">Development Tutorial</a></li>
+                            <li><a href="#">How to - Blog</a></li>
+                            <li><a href="#">Youtube Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="innerFooter">
+                    <span>UI-Shop.co © 2012-2025, All Rights Reserved</span>
+                    <div class="footerIcons">
+                        <img src="Images/visa.png" alt="💵">
+                        <img src="Images/mastercard.png" alt="💳">
+                        <img src="Images/paypal.png" alt="🤝">
+                        <img src="Images/applepay.png" alt="🍎">
+                        <img src="Images/gpay.png" alt="💻">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML Datas -->
+    <script src="JS/card-data.js"></script>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript Code -->
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
