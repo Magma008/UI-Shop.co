@@ -15,7 +15,6 @@
 
 body {
     position: relative;
-    min-height: 200vh;
 }
 /* + ----------------------------------------------------------- + */
 
@@ -24,11 +23,9 @@ body {
 .main {
     padding: 60px 0px;
     background: #f0f0f0 url("../Images/main-bg.png");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     line-height: 30px;
-    min-height: 100vh;
 }
 
 .mainGroup {
